@@ -14,13 +14,11 @@ background-color: whitesmoke;
 }
 h5{
     text-align: center;
-padding: 1em;
-background-color: whitesmoke;
+    padding: 1em;
+    background-color: whitesmoke;
 
     
 }
 a{
     text-decoration: none;
-background-color: yellow;
-
 }
