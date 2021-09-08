@@ -1,0 +1,26 @@
+ .nav-flex {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color:rgb(233, 233, 224);
+
+
+}
+.navbar-items{
+flex-grow: 1;
+flex-basis: 212px;
+background-color: whitesmoke;
+
+}
+h5{
+    text-align: center;
+padding: 1em;
+background-color: whitesmoke;
+
+    
+}
+a{
+    text-decoration: none;
+background-color: yellow;
+
+}
