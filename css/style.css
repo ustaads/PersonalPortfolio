@@ -23,3 +23,31 @@ a{
 a:hover {
     background-color:rgb(233, 233, 224);
 }
+.slider {
+    display: flex;
+    height: 80vh;
+    
+
+}
+.slider > img {
+    flex-grow: 1;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    border: solid 10px whitesmoke;
+    
+}
+
+.gallery  > img {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    
+
+}
