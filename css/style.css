@@ -1,8 +1,15 @@
+:root {
+    --image1: images/IMG-20171128-WA0007.jpg;
+  }
+ 
+ 
+ 
  .nav-flex {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     background-color:rgb(233, 233, 224);
+    margin-bottom: 10px;
 
 
 }
@@ -13,15 +20,18 @@ background-color: whitesmoke;
 
 }
 
-a{
+.nav-flex > a{
     text-decoration: none;
     text-align: center;
     padding: 1em;
     background-color: whitesmoke;
 }
 
-a:hover {
+.nav-flex >  a:hover {
     background-color:rgb(233, 233, 224);
+    transform: scale(1.2);
+
+
 }
 .slider {
     display: flex;
@@ -44,10 +54,13 @@ a:hover {
     
 }
 
-.gallery  > img {
+.gallery  > a > img {
     height: 200px;
     width: auto;
     padding: 10px;
     
 
+}
+.gallery > a:hover {
+    transform: scale(1.2);
 }
