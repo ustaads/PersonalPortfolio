@@ -43,6 +43,13 @@ background-color: whitesmoke;
     flex-grow: 1;
 }
 
+/* Hide the slider when viewed on a mobile phone */
+@media (max-width:629px) {
+    .slider {
+      display: none;
+    }
+  }
+
 .gallery {
     padding-left: 10%;
     padding-right: 10%;
