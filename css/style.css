@@ -71,3 +71,24 @@ background-color: whitesmoke;
 .gallery > a:hover {
     transform: scale(1.2);
 }
+
+/* Articles.html */
+.articles {
+    display: flex;
+    flex: row;
+}
+.article {
+    display: flex;
+    flex: column;
+
+}
+
+
+.article  img {
+    width: 200px;
+}
+
+.article .text {
+    margin: 10px;
+    padding: auto;
+}
