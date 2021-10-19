@@ -2,34 +2,38 @@
     --image1: images/IMG-20171128-WA0007.jpg;
   }
  
+  html{
+      font-size: 100%;
+      background-color: inherit;
+  }
+  
  body{
     font-family: 'Lato', sans-serif;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+
  }
  
  .nav-flex {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    background-color:rgb(233, 233, 224);
-    margin-bottom: 10px;
-
 
 }
 .navbar-items{
 flex-grow: 1;
 flex-basis: 212px;
-background-color: whitesmoke;
 
 }
 
-.nav-flex > a{
+.nav-flex-anchor{
     text-decoration: none;
     text-align: center;
     padding: 1em;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
-.nav-flex >  a:hover {
+.nav-flex-anchor:hover {
     background-color:rgb(233, 233, 224);
     transform: scale(1.2);
 
@@ -43,24 +47,28 @@ background-color: whitesmoke;
     height: 95vh;
     background-image: url( ../images/Snapchat-1073452581\ \(1\).jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center top;
     
     
 
 }
 .heading {
     color: #fff;
-    letter-spacing: 30px;
+    letter-spacing: 1.5rem;
 }
 .heading-head {
     display: inline-block;
     animation-name: MoveInLeft;
     animation-duration: 3s;
+    animation-timing-function: ease;
 }
 .heading-tail{
+    
+
     display: inline-block;
     animation-name: MoveInRight;
     animation-duration: 3s;
+    animation-timing-function: ease;
 
 }
 
@@ -103,24 +111,25 @@ background-color: whitesmoke;
   }
 
 .gallery {
-    padding-left: 10%;
-    padding-right: 10%;
+  
+    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10px;
-    border: solid 10px whitesmoke;
+    /* margin-top: 10px; */
+    /* border: solid 10px whitesmoke; */
     
 }
 
-.gallery  > a > img {
-    height: 200px;
+.gallery-images {
+    height: 350px;
     width: auto;
-    padding: 10px;
+    padding: 0 5px;
     
 
 }
-.gallery > a:hover {
+
+.gallery-images:hover {
     transform: scale(1.2);
 }
 
@@ -136,11 +145,11 @@ background-color: whitesmoke;
 }
 
 
-.article  img {
+.article-image {
     width: 200px;
 }
 
-.article .text {
+.article-text {
     margin: 10px;
     padding: auto;
 }
