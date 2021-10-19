@@ -1,0 +1,148 @@
+:root {
+    --image1: images/IMG-20171128-WA0007.jpg;
+  }
+ 
+  html{
+      font-size: 100%;
+      background-color: inherit;
+  }
+  
+ body{
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+
+ }
+ 
+
+.nav-flex {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    &-items{
+        flex-grow: 1;
+        flex-basis: 212px;
+        text-decoration: none;
+        text-align: center;
+        padding: 1em;
+        background-color: white;
+        
+        &:hover {
+            background-color:rgb(233, 233, 224);
+            transform: scale(1.2);
+        }
+        }
+        
+
+}
+
+
+
+.slider {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-image: url( ../images/Snapchat-1073452581\ \(1\).jpg);
+    background-size: cover;
+    background-position: center top;
+    
+}
+.heading {
+    color: #fff;
+    letter-spacing: 1.5rem;
+
+    &-head {
+        display: inline-block;
+        animation-name: MoveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+    }
+    &-tail{
+    
+
+        display: inline-block;
+        animation-name: MoveInRight;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+    
+    }
+}
+
+
+@keyframes MoveInLeft {
+
+    0% {
+        /* opacity: 0; */
+        transform: translate(-600px);
+
+    }
+    100%{
+        /* opacity: 1; */
+        transform: translate(0);
+
+    }
+}
+
+@keyframes MoveInRight {
+
+    0% {
+        /* opacity: 0ss; */
+        transform: translate(600px);
+
+    }
+
+    100%{
+        /* opacity: 1; */
+        transform: translate(0);
+
+    }
+
+}
+
+
+/* Hide the slider when viewed on a mobile phone */
+@media (max-width:629px) {
+    .slider {
+      display: none;
+    }
+  }
+
+.gallery {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    &-images {
+        height: 350px;
+        width: auto;
+        padding: 0 5px;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+/* Articles.html */
+.articles {
+    display: flex;
+    flex: row;
+}
+.article {
+    display: flex;
+    flex: column;
+    &-image {
+        width: 200px;
+    }
+    
+    &-text {
+        margin: 10px;
+        padding: auto;
+    }
+    
+}
+

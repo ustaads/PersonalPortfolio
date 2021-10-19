@@ -1,0 +1,22 @@
+{
+  "name": "personalportfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ustaads/PersonalPortfolio.git"
+  },
+  "author": "Amit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ustaads/PersonalPortfolio/issues"
+  },
+  "homepage": "https://github.com/ustaads/PersonalPortfolio#readme",
+  "devDependencies": {
+    "sass": "^1.43.2"
+  }
+}
